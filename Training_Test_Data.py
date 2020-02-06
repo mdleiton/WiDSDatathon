@@ -6,7 +6,8 @@ import numpy as np
 from sklearn.model_selection import StratifiedKFold
 
 data = pandas.read_csv("menor30.csv", decimal=".")
-data_total = data.drop(columns=["patient_id","encounter_id", "readmission_status"])
+data_total = data
+#data_total = data.drop(columns=["patient_id","encounter_id", "readmission_status"])
 data_training_total =data_total.drop(columns=["hospital_death"])
 skf = StratifiedKFold(n_splits=10)
 skf.get_n_splits(data_training_total, data_total["hospital_death"])
