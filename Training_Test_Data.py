@@ -5,7 +5,7 @@ from sklearn.impute import SimpleImputer
 import numpy as np
 from sklearn.model_selection import StratifiedKFold
 
-data = pandas.read_csv("menor30.csv", decimal=".")
+data = pandas.read_csv("dataRegularizada.csv", decimal=".")
 data_total = data
 #data_total = data.drop(columns=["patient_id","encounter_id", "readmission_status"])
 data_training_total =data_total.drop(columns=["hospital_death"])
@@ -21,7 +21,7 @@ contador = 0
 for train_index, test_index in skf.split(data_training_total, data_total["hospital_death"]):
     train_x = data_total.iloc[train_index] 
     test_x = data_total.iloc[test_index]
-    train_x.to_csv("train_"+ str(contador) + ".csv",sep=",", header=True, index=False)
-    test_x.to_csv("test_"+ str(contador) + ".csv",sep=",", header=True, index=False)
+    train_x.to_csv("dataRegularizada/train_"+ str(contador) + ".csv",sep=",", header=True, index=False)
+    test_x.to_csv("dataRegularizada/test_"+ str(contador) + ".csv",sep=",", header=True, index=False)
     contador = contador + 1
 
