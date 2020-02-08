@@ -39,6 +39,14 @@ Dashboard:
 ![Alt text](dashboard.png "Dashboard")
 [ONLINE](https://public.tableau.com/profile/denisse.orozco#!/vizhome/Machine_learning/Dashboard1?publish=yes)
 
+
+
+Modelos generados:
+------------------
+
+[DESCARGA](https://drive.google.com/drive/folders/1bKjBl7O8mMsY6PM5Ow1s7IyJdLGGt_6f?usp=sharing)
+
+
 ### Autores ###
 * Gálvez Eunice [github](https://github.com/eagalvez)
 * Leiton Mauricio [github](https://github.com/mdleiton)
